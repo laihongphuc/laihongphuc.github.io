@@ -1,1 +1,3 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# Hong-Phuc Lai Website
+
+Source for the personal website published from this repository.
