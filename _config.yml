@@ -1,0 +1,15 @@
+title: Hong-Phuc Lai
+url: "https://laihongphuc.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - phuc_data/
+  - index_backup.html
+  - README.md

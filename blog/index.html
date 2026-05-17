@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+---
+
+<h2>Blog</h2>
+<p style="color:#666; font-size:small; margin-bottom:24px;">Notes on research, ideas, and things I find interesting.</p>
+
+{% if site.posts.size == 0 %}
+  <p style="color:#aaa;">No posts yet.</p>
+{% else %}
+  <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;"><tbody>
+  {% for post in site.posts %}
+    <tr>
+      <td style="padding:12px 0; border-bottom:1px solid #f0f0f0; vertical-align:top;">
+        <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+        <br>
+        <span style="font-size:small; color:#999;">{{ post.date | date: "%B %d, %Y" }}</span>
+        {% if post.tags.size > 0 %}
+          &nbsp;&middot;&nbsp; <span style="font-size:small; color:#aaa;">{{ post.tags | join: ", " }}</span>
+        {% endif %}
+        {% if post.description %}
+          <br><span style="font-size:small; color:#666;">{{ post.description }}</span>
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody></table>
+{% endif %}

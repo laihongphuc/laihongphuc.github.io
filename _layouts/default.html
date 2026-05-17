@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ page.title }} | Hong-Phuc Lai</title>
+    <meta name="author" content="Hong-Phuc Lai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <style>
+      .blog-nav { font-size: small; margin-bottom: 24px; color: #888; }
+      .blog-nav a { color: #555; }
+      .post-content h1, .post-content h2, .post-content h3 {
+        margin-top: 1.4em;
+        margin-bottom: 0.4em;
+      }
+      .post-content p { margin: 0.8em 0; line-height: 1.7; }
+      .post-content pre {
+        background: #f6f6f6;
+        border-radius: 4px;
+        padding: 12px 16px;
+        overflow-x: auto;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .post-content code {
+        background: #f0f0f0;
+        padding: 1px 5px;
+        border-radius: 3px;
+        font-size: 13px;
+      }
+      .post-content pre code { background: none; padding: 0; }
+      .post-content blockquote {
+        border-left: 3px solid #ddd;
+        margin: 1em 0;
+        padding: 4px 16px;
+        color: #666;
+      }
+      .post-content ul, .post-content ol { padding-left: 1.5em; line-height: 1.8; }
+      .post-content img { max-width: 100%; border-radius: 4px; }
+      .post-meta { font-size: small; color: #999; margin-bottom: 24px; }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:24px 24px 0 24px;">
+          <p class="blog-nav">
+            <a href="/">Hong-Phuc Lai</a> &nbsp;/&nbsp; <a href="/blog/">Blog</a>{% if page.layout == 'post' %} &nbsp;/&nbsp; {{ page.title }}{% endif %}
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:0 24px 32px 24px;">
+          {{ content }}
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:16px 24px;">
+          <p style="text-align:right;font-size:small;color:#aaa;">
+            <a href="/">← Back to homepage</a>
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
