@@ -149,76 +149,6 @@
             >
               <tbody>
                 <tr
-                  bgcolor="#ffffd0"
-                  onmouseout="pixelrush_stop()"
-                  onmouseover="pixelrush_start()"
-                >
-                  <td style="padding: 16px; width: 20%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="pixelrush">
-                        <img
-                          src="phuc_data/phuc_images/pixelrush_after.png"
-                          alt="img-in"
-                          width="160"
-                        />
-                      </div>
-                      <div class="two" id="pixelrush_static">
-                        <img
-                          src="phuc_data/phuc_images/pixelrush_before.png"
-                          alt="img-out"
-                          width="160"
-                        />
-                      </div>
-                    </div>
-                    <script type="text/javascript">
-                      function pixelrush_start() {
-                        document.getElementById("pixelrush").style.opacity =
-                          "1";
-                        document.getElementById(
-                          "pixelrush_static",
-                        ).style.opacity = "0";
-                      }
-
-                      function pixelrush_stop() {
-                        document.getElementById("pixelrush").style.opacity =
-                          "0";
-                        document.getElementById(
-                          "pixelrush_static",
-                        ).style.opacity = "1";
-                      }
-                      pixelrush_start();
-                    </script>
-                  </td>
-                  <td style="padding: 20px; width: 75%; vertical-align: middle">
-                    <a href="pixelrush/">
-                      <span class="papertitle"
-                        >PixelRush: Ultra-Fast, Training-Free High-Resolution
-                        Image Generation via One-step Diffusion</span
-                      >
-                    </a>
-                    <br />
-                    <strong>Hong-Phuc Lai</strong>,
-                    <a href="https://phongnhhn.info/">Phong Nguyen</a>,
-                    <a
-                      href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en"
-                      >Anh Tran</a
-                    >
-                    <br />
-                    <em>CVPR</em>, 2026 &nbsp
-                    <font color="red"><strong>(Highlight)</strong></font>
-                    <br />
-                    <a href="https://arxiv.org/abs/2602.12769">arXiv</a>
-                    <p></p>
-                    <p>
-                      An ultra-fast, training-free method for high-resolution
-                      image generation via one-step diffusion, achieving
-                      state-of-the-art quality at up to 30&times; faster speed
-                      than prior work.
-                    </p>
-                  </td>
-                </tr>
-
-                <tr
                   onmouseout="ultraflash_stop()"
                   onmouseover="ultraflash_start()"
                 >
@@ -301,6 +231,76 @@
                       the denoiser, delivering ~2&times; faster 4K generation
                       with better image quality than a state-of-the-art
                       pipeline.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr
+                  bgcolor="#ffffd0"
+                  onmouseout="pixelrush_stop()"
+                  onmouseover="pixelrush_start()"
+                >
+                  <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="pixelrush">
+                        <img
+                          src="phuc_data/phuc_images/pixelrush_after.png"
+                          alt="img-in"
+                          width="160"
+                        />
+                      </div>
+                      <div class="two" id="pixelrush_static">
+                        <img
+                          src="phuc_data/phuc_images/pixelrush_before.png"
+                          alt="img-out"
+                          width="160"
+                        />
+                      </div>
+                    </div>
+                    <script type="text/javascript">
+                      function pixelrush_start() {
+                        document.getElementById("pixelrush").style.opacity =
+                          "1";
+                        document.getElementById(
+                          "pixelrush_static",
+                        ).style.opacity = "0";
+                      }
+
+                      function pixelrush_stop() {
+                        document.getElementById("pixelrush").style.opacity =
+                          "0";
+                        document.getElementById(
+                          "pixelrush_static",
+                        ).style.opacity = "1";
+                      }
+                      pixelrush_start();
+                    </script>
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle">
+                    <a href="pixelrush/">
+                      <span class="papertitle"
+                        >PixelRush: Ultra-Fast, Training-Free High-Resolution
+                        Image Generation via One-step Diffusion</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Hong-Phuc Lai</strong>,
+                    <a href="https://phongnhhn.info/">Phong Nguyen</a>,
+                    <a
+                      href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en"
+                      >Anh Tran</a
+                    >
+                    <br />
+                    <em>CVPR</em>, 2026 &nbsp
+                    <font color="red"><strong>(Highlight)</strong></font>
+                    <br />
+                    <a href="https://arxiv.org/abs/2602.12769">arXiv</a>
+                    <p></p>
+                    <p>
+                      An ultra-fast, training-free method for high-resolution
+                      image generation via one-step diffusion, achieving
+                      state-of-the-art quality at up to 30&times; faster speed
+                      than prior work.
                     </p>
                   </td>
                 </tr>
