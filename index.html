@@ -218,6 +218,93 @@
                   </td>
                 </tr>
 
+                <tr
+                  onmouseout="ultraflash_stop()"
+                  onmouseover="ultraflash_start()"
+                >
+                  <td style="padding: 16px; width: 20%; vertical-align: middle">
+                    <div class="one" style="height: 146px">
+                      <div class="two" id="ultraflash" style="height: 146px">
+                        <img
+                          src="phuc_data/phuc_images/ultraflash_after.png"
+                          alt="UltraFlash sparse patch decoding"
+                          width="160"
+                          height="146"
+                          style="
+                            width: 160px;
+                            height: 146px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                        />
+                      </div>
+                      <div
+                        class="two"
+                        id="ultraflash_static"
+                        style="height: 146px"
+                      >
+                        <img
+                          src="phuc_data/phuc_images/ultraflash_before.png"
+                          alt="UltraFlash latent hyperloop"
+                          width="160"
+                          height="146"
+                          style="
+                            width: 160px;
+                            height: 146px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <script type="text/javascript">
+                      function ultraflash_start() {
+                        document.getElementById("ultraflash").style.opacity =
+                          "1";
+                        document.getElementById(
+                          "ultraflash_static",
+                        ).style.opacity = "0";
+                      }
+
+                      function ultraflash_stop() {
+                        document.getElementById("ultraflash").style.opacity =
+                          "0";
+                        document.getElementById(
+                          "ultraflash_static",
+                        ).style.opacity = "1";
+                      }
+                      ultraflash_start();
+                    </script>
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle">
+                    <span class="papertitle"
+                      >UltraFlash: Accelerating Megapixel Visual Synthesis</span
+                    >
+                    <br />
+                    <strong>Hong-Phuc Lai</strong><sup>*</sup>,
+                    <a href="https://aengusng8.github.io/">Anh Nguyen</a
+                    ><sup>*</sup>,
+                    <a href="https://phongnhhn.info/">Phong Nguyen</a>,
+                    <a
+                      href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en"
+                      >Anh Tran</a
+                    >
+                    <br />
+                    <span style="font-size: small"><sup>*</sup>Co-first authors</span>
+                    <br />
+                    <em>NeurIPS</em>, 2026
+                    <p></p>
+                    <p>
+                      Addresses the VAE decoding bottleneck in high-resolution
+                      image generation, enabling further speed improvements
+                      beyond PixelRush. It speeds up megapixel synthesis beyond
+                      the denoiser, delivering ~2&times; faster 4K generation
+                      with better image quality than a state-of-the-art
+                      pipeline.
+                    </p>
+                  </td>
+                </tr>
+
                 <tr onmouseout="paspp_stop()" onmouseover="paspp_start()">
                   <td style="padding: 16px; width: 20%; vertical-align: middle">
                     <div class="one">
@@ -335,51 +422,71 @@
               "
             >
               <tbody>
-                <tr>
+                <tr
+                  onmouseout="swiftalign_stop()"
+                  onmouseover="swiftalign_start()"
+                >
                   <td style="padding: 16px; width: 20%; vertical-align: middle">
-                    <div
-                      style="
-                        width: 160px;
-                        height: 120px;
-                        background: #e8f0fe;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 6px;
-                        border: 1px solid #c5d4f5;
-                      "
-                    >
-                      <span
-                        style="
-                          font-size: 13px;
-                          font-weight: bold;
-                          color: #888;
-                          text-align: center;
-                        "
-                        >Under<br />Review</span
-                      >
+                    <div class="one">
+                      <div class="two" id="swiftalign">
+                        <img
+                          src="phuc_data/phuc_images/swiftalign_after.png"
+                          alt="SwiftAlign aligned sample"
+                          width="160"
+                        />
+                      </div>
+                      <div class="two" id="swiftalign_static">
+                        <img
+                          src="phuc_data/phuc_images/swiftalign_before.png"
+                          alt="SwiftAlign baseline sample"
+                          width="160"
+                        />
+                      </div>
                     </div>
+                    <script type="text/javascript">
+                      function swiftalign_start() {
+                        document.getElementById("swiftalign").style.opacity =
+                          "1";
+                        document.getElementById(
+                          "swiftalign_static",
+                        ).style.opacity = "0";
+                      }
+
+                      function swiftalign_stop() {
+                        document.getElementById("swiftalign").style.opacity =
+                          "0";
+                        document.getElementById(
+                          "swiftalign_static",
+                        ).style.opacity = "1";
+                      }
+                      swiftalign_start();
+                    </script>
                   </td>
                   <td style="padding: 20px; width: 75%; vertical-align: middle">
                     <span class="papertitle"
-                      >PixelFlash: Eliminating the VAE Bottleneck for Ultra-Fast
-                      High-Resolution Image Generation</span
+                      >SwiftAlign: Post-Distillation Alignment for Fast Flow
+                      Models</span
                     >
                     <br />
-                    <strong>Hong-Phuc Lai</strong>,
-                    <a href="https://aengusng8.github.io/">Anh Nguyen</a>,
+                    <strong>Hong-Phuc Lai</strong><sup>*</sup>,
+                    <a href="https://aengusng8.github.io/">Anh Nguyen</a
+                    ><sup>*</sup>, Manh Tran,
                     <a href="https://phongnhhn.info/">Phong Nguyen</a>,
                     <a
                       href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en"
                       >Anh Tran</a
                     >
                     <br />
+                    <span style="font-size: small"><sup>*</sup>Co-first authors</span>
+                    <br />
                     <em>Under review</em>
                     <p></p>
                     <p>
-                      Addresses the VAE decoding bottleneck in high-resolution
-                      image generation, enabling further speed improvements
-                      beyond PixelRush.
+                      Black-box reward post-training for already-distilled
+                      few-step flow models. SwiftAlign adapts a deployed sampler
+                      to new rewards without reward gradients or a new
+                      distillation run, while keeping the deterministic ODE
+                      path used at inference.
                     </p>
                   </td>
                 </tr>
